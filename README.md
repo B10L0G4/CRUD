@@ -39,6 +39,20 @@ criado o projeto, vamos criar o app com comando - python manage.py startapp nome
   - crie a home em views (def home(request):)
   - vamos criar um import , para visualizar (from django.http import HttpResponse )
   - e na nossa def vamos dar um return HttpResponse("Hello World")
-  - para visualiozar use o comando python manage.py runserver
+  ### - para visualiozar use o comando python manage.py runserver
   - pegue o caminho que no Starting development server at e coloque no seu navegador 
   - o que deve aparecer será nosso Hello World. 
+
+  Passo 1 - 
+
+  Templates : elemntos de marcação para fazer formulários e outros. (layout)
+    o diretorio com o nome templates já é reconhecido pelo Django 
+
+vamos no views e vamos referenciar nosso template 
+ - from django.shortcuts import render
+    na função que já havia criado 
+     return render(request, 'index.html') (criar um index.html )
+
+
+  
+
