@@ -8,5 +8,5 @@ def home(request):
 
 def forms(request):
     data = {}
-    data['forms'] =CarrosForms()
+    data['forms'] = CarrosForms()
     return render(request, 'forms.html', data)

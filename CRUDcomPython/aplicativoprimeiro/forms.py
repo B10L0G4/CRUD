@@ -1,5 +1,5 @@
 from django. forms import ModelForm
-from aplicativoprimeiro.forms import Carros
+from aplicativoprimeiro.models import Carros
 class CarrosForms(ModelForm):
     class Meta:
         model = Carros
