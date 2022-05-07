@@ -10,3 +10,8 @@ def forms(request):
     data = {}
     data['forms'] = CarrosForms()
     return render(request, 'forms.html', data)
+def create(request):
+    form= CarrosForms(request.POST or NONE)
+    if form.is_valid():
+        form(request).save()
+        return redirect('home')

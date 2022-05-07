@@ -14,7 +14,7 @@
     <div class="col-8 m-auto pt-2 pb-2">
         <button class="btn btn-outline-success" type="submit"> Cadastar </button>
         <!--{{forms.as_p}}-->
-            <form name="form" id="form" method="post" >
+            <form name="forms" id="form" action="/create/" method="post" >
                 {%csrf_token %}
                 <div class="form-group mt-4">Modelo: {{forms.Modelo}}</div> 
                 <div class="form-group mt-4">MArca: {{forms.Marca}}</div> 
